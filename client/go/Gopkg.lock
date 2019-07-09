@@ -2,6 +2,14 @@
 
 
 [[projects]]
+  branch = "master"
+  digest = "1:c7259caad42ff61a42d8d2796170b35622687edbf51eee479aa0a4e67ec0f969"
+  name = "github.com/azenakhi/grpc-protobuf"
+  packages = ["client/services"]
+  pruneopts = "UT"
+  revision = "dfbca969424d78fbf823c3331aa7796856d0de97"
+
+[[projects]]
   digest = "1:239c4c7fd2159585454003d9be7207167970194216193a8a210b8d29576f19c9"
   name = "github.com/golang/protobuf"
   packages = [
@@ -117,6 +125,7 @@
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
+    "github.com/azenakhi/grpc-protobuf/client/services",
     "github.com/golang/protobuf/proto",
     "google.golang.org/grpc",
     "google.golang.org/grpc/codes",

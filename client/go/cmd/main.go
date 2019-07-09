@@ -6,7 +6,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/azenakhi/grpc-protobuf/client/services"
+	"github.com/azenakhi/grpc-protobuf/client/go/services"
 
 	"google.golang.org/grpc"
 )
