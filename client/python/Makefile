@@ -1,9 +1,8 @@
 proto:
-	@python -m grpc_tools.protoc -I../../protos --python_out=services/ --grpc_python_out=services/ ../../protos/task.proto
-	@touch services/__init__.py
+	@python3.7 -m grpc_tools.protoc -I../../protos --python_out=services/ --grpc_python_out=services/ ../../protos/task.proto
 
 dep:
-	@pip install -r requirements.txt
+	@pip3.7 install -r requirements.txt
 
 run:
-	@env/bin/python app.py
+	@env/bin/python3.7 app.py

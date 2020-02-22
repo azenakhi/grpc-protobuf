@@ -14,4 +14,4 @@ l = stub.List(task_pb2.Void())
 tasks = l.tasks
 
 for i in range(len(tasks)):
-    print tasks[i]
+    print(tasks[i])
